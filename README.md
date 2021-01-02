@@ -1,2 +1,2 @@
 # dotfiles
-My dotfiles, for easy access on any machine
+Dotfiles, for easy access on any machine
