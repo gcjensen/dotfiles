@@ -1,0 +1,17 @@
+[user]
+    name = George Jensen
+    email = george@gcjensen.uk
+
+[color]
+    diff = auto
+
+[alias]
+    a = add
+    c = commit
+    diffs = diff --staged
+
+[core]
+    pager = diff-so-fancy | less --tabs=4 -RFX
+
+[diff-so-fancy]
+    markEmptyLines = false
