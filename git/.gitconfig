@@ -2,6 +2,9 @@
     name = George Jensen
     email = george@gcjensen.uk
 
+[init]
+    defaultBranch = main
+
 [color]
     diff = auto
 
