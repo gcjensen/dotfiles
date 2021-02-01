@@ -11,6 +11,7 @@
 [alias]
     a = add
     c = commit
+    b = branch --show-current
     diffs = diff --staged
 
 [core]
