@@ -1,0 +1,26 @@
+# General
+export TMUX_POWERLINE_DEBUG_MODE_ENABLED="false"
+export TMUX_POWERLINE_PATCHED_FONT_IN_USE="false"
+export TMUX_POWERLINE_THEME="default"
+
+# battery.sh - type can be percentage or cute
+export TMUX_POWERLINE_SEG_BATTERY_TYPE="percentage"
+export TMUX_POWERLINE_SEG_BATTERY_NUM_HEARTS="5"
+
+# date.sh
+export TMUX_POWERLINE_SEG_DATE_FORMAT="%F"
+
+# hostname.sh - Can be {"short, long"}.
+export TMUX_POWERLINE_SEG_HOSTNAME_FORMAT="short"
+
+# now_playing.sh
+export TMUX_POWERLINE_SEG_NOW_PLAYING_MUSIC_PLAYER="spotify"
+export TMUX_POWERLINE_SEG_NOW_PLAYING_MAX_LEN="40"
+export TMUX_POWERLINE_SEG_NOW_PLAYING_TRIM_METHOD="roll"
+export TMUX_POWERLINE_SEG_NOW_PLAYING_ROLL_SPEED="4"
+
+# pwd.sh
+export TMUX_POWERLINE_SEG_PWD_MAX_LEN="40"
+
+# time.sh
+export TMUX_POWERLINE_SEG_TIME_FORMAT="%H:%M:%S"
