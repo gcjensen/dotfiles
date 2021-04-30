@@ -10,7 +10,8 @@ autocmd FileType,BufRead * autocmd BufWritePre <buffer> %s/\s\+$//e
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " Use visual bell instead of beeping
-set noerrorbells visualbell t_vb=
+set visualbell
+set noerrorbells
 set vb
 
 " Show line numbers
@@ -31,8 +32,8 @@ autocmd Filetype go setlocal tabstop=4 shiftwidth=4 softtabstop=4
 " 4 space tabs for perl and some config files
 autocmd FileType,BufRead *.pm,*.pl,*.t,perl,*.conf set tabstop=4|set shiftwidth=4|set expandtab|set
 
-" 2 space tabs for js, html and scss
-autocmd FileType,BufRead javascript,*.ts,*.tsx,*.jsx,html,*.scss,*.css,*json,*.tt,*.xml,*.json set tabstop=2|set shiftwidth=2|set expandtab|set
+" 2 space tabs
+autocmd FileType,BufRead javascript,*.ts,*.tsx,*.jsx,html,*.scss,*.css,*.tt,*.xml,*.json,*.tf set tabstop=2|set shiftwidth=2|set expandtab|set
 
 " JavaScript syntax highlighting for TypeScript
 autocmd FileType,BufRead *ts set syntax=javascript
@@ -40,7 +41,7 @@ autocmd FileType *ts setlocal commentstring=// %s
 
 let g:prettier#autoformat = 0
 let g:prettier#config#arrow_parens = 'always'
-autocmd BufWritePre *.js,*ts,*.tsx,*.jsx,*.css,*.scss,*.md,*.mdx,*.html Prettier
+autocmd BufWritePre *.js,*ts,*.tsx,*.jsx,*.css,*.scss,*.mdx,*.html Prettier
 
 " Make tab in v mode ident code
 vmap <tab> >gv
@@ -121,5 +122,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'google/vim-jsonnet'
+Plug 'hashivim/vim-terraform'
 
 call plug#end()
